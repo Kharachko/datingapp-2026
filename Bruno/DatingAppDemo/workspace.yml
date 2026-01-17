@@ -1,0 +1,12 @@
+opencollection: 1.0.0
+info:
+  name: "DatingAppDemo"
+  type: workspace
+
+collections:
+  - name: "MembersCollection"
+    path: "collections/MembersCollection"
+
+specs:
+
+docs: ''

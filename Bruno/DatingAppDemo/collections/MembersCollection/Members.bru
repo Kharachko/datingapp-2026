@@ -1,0 +1,20 @@
+meta {
+  name: Members
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/api/members
+  body: none
+  auth: inherit
+}
+
+vars:pre-request {
+  url: https://localhost:5001
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
