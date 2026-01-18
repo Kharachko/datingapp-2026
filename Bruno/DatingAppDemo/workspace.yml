@@ -6,6 +6,8 @@ info:
 collections:
   - name: "MembersCollection"
     path: "collections/MembersCollection"
+  - name: "DatingApp Collection"
+    path: "collections/DatingApp Collection"
 
 specs:
 
