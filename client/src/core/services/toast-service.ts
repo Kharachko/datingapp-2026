@@ -40,7 +40,7 @@ export class ToastService {
   success(message: string, duration?: number) {
     this.createToastElement(message, 'alert-success', duration);
   }
-  error(message: string, duration?: number) {
+  error(message: string, duration?: number, status?: string) {
     this.createToastElement(message, 'alert-error', duration);
   }
   warning(message: string, duration?: number) {
