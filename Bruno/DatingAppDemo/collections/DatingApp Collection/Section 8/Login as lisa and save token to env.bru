@@ -12,16 +12,20 @@ post {
 
 body:json {
   {
-  	"email": "lisa@test.com",
-  	"password": "Pa$$w0rd"
+    "email": "lisa@test.com",
+    "password": "Pa$$w0rd"
   }
+}
+
+vars:pre-request {
+  token: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxpc2FAdGVzdC5jb20iLCJuYW1laWQiOiJsaXNhLWlkIiwibmJmIjoxNzY5ODk3MDA0LCJleHAiOjE3NzA1MDE4MDQsImlhdCI6MTc2OTg5NzAwNH0.ieUGhNevoe0sQGGvbJ2rxeyRONOOPlq6_EIIqvqoAhW_nRPlKrFjIWDwr5GdBzktWswdGz2cg5WIq1Otq4czkA
 }
 
 script:post-response {
   const user = res.getBody();
   
   test("Has properties", function () {
-      expect(user).to.have.property('username');
+      expect(user).to.have.property('email');
       expect(user).to.have.property('token');
   });
   
@@ -32,4 +36,5 @@ script:post-response {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

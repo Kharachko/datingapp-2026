@@ -1,0 +1,4 @@
+name: GG
+variables:
+  - name: token
+    value: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxpc2FAdGVzdC5jb20iLCJuYW1laWQiOiJsaXNhLWlkIiwibmJmIjoxNzY5ODk3MzEwLCJleHAiOjE3NzA1MDIxMTAsImlhdCI6MTc2OTg5NzMxMH0.LYSLaD1qJVugnFpet5rq4Dk1pweDtCiBM9tZLr56tnAk4Yklhc4rJRPFe-3HG5yPpFbDm1ASdoVjKvDzQoDWuw
